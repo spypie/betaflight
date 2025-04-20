@@ -239,7 +239,7 @@ bool checkUsartTxOutput(uartPort_t *s)
             return true;
         } else {
             // TX line is pulled low so don't enable USART TX
-            return false;
+            return true;
         }
     }
 
