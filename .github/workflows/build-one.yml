@@ -1,0 +1,10 @@
+name: Build SPEEDYBEEF405AIO (manual)
+
+on:
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  build-one:
+    uses: ./.github/workflows/ci.yml  # 使用现有的 ci.yml
+    with:
+      target: SPEEDYBEEF405AIO  # 指定目标板
